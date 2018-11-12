@@ -99,4 +99,5 @@
         <variable name="FCM_VERSION" value="11.6.2" />
     </plugin>
     <plugin name="cordova.plugins.diagnostic" spec="^4.0.10" />
+    <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
 </widget>

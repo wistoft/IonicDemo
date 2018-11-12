@@ -10,6 +10,7 @@ import { Media } from '@ionic-native/media';
 import { Market } from '@ionic-native/market';
 import { Push } from '@ionic-native/push';
 import { Diagnostic } from '@ionic-native/diagnostic';
+import { Network } from '@ionic-native/network';
 
 import { MyApp } from './app.component';
 import { UtilService } from '../services/app.util.service';
@@ -22,6 +23,7 @@ import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 import { RecordAudioPage } from '../pages/record-audio/record-audio';
 import { PushNotificationPage } from '../pages/push-notification/push-notification';
 import { PermissionsPage } from '../pages/permissions/permissions';
+import { InternetPage } from '../pages/internet/internet';
 import { UtilPage } from '../pages/util/util';
 
 @NgModule({
@@ -35,6 +37,7 @@ import { UtilPage } from '../pages/util/util';
 		RecordAudioPage,
 		PushNotificationPage,
 		PermissionsPage,
+		InternetPage,
 		UtilPage,
 	],
 	imports: [
@@ -52,6 +55,7 @@ import { UtilPage } from '../pages/util/util';
 		RecordAudioPage,
 		PushNotificationPage,
 		PermissionsPage,
+		InternetPage,
 		UtilPage,
 	],
 	providers: [
@@ -64,6 +68,7 @@ import { UtilPage } from '../pages/util/util';
 		Market,
 		Push,
 		Diagnostic,
+		Network,
 		UtilService,
 	]
 })

@@ -13,6 +13,7 @@ import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 import { RecordAudioPage } from '../pages/record-audio/record-audio';
 import { PushNotificationPage } from '../pages/push-notification/push-notification';
 import { PermissionsPage } from '../pages/permissions/permissions';
+import { InternetPage } from '../pages/internet/internet';
 import { UtilPage } from '../pages/util/util';
 
 @Component({
@@ -58,6 +59,7 @@ export class MyApp {
 				{ title: 'Record Audio'			, component: RecordAudioPage },
 				{ title: 'Push Notification'	, component: PushNotificationPage },
 				{ title: 'Permissions'			, component: PermissionsPage },
+				{ title: 'Internet'				, component: InternetPage },
 				{ title: 'Util'					, component: UtilPage },
 			];
 
