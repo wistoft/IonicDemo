@@ -6,14 +6,18 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { File } from '@ionic-native/file';
 import { Camera } from '@ionic-native/camera';
+import { Media } from '@ionic-native/media';
 
 import { MyApp } from './app.component';
+
 import { CameraPage } from '../pages/camera/camera';
+import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 
 @NgModule({
 	declarations: [
 		MyApp,
-		CameraPage
+		CameraPage,
+		PlayAudioAssetPage,
 	],
 	imports: [
 		BrowserModule,
@@ -22,14 +26,16 @@ import { CameraPage } from '../pages/camera/camera';
 	bootstrap: [IonicApp],
 	entryComponents: [
 		MyApp,
-		CameraPage
+		CameraPage,
+		PlayAudioAssetPage,
 	],
 	providers: [
 		StatusBar,
 		SplashScreen,
 		{provide: ErrorHandler, useClass: IonicErrorHandler},
 		File,
-		Camera
+		Camera,
+		Media,
 	]
 })
 export class AppModule {}

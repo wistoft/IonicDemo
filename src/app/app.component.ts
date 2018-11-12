@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { CameraPage } from '../pages/camera/camera';
+import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 
 @Component({
 	templateUrl: 'app.html'
@@ -19,7 +20,8 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-    	{ title: 'Camera'				, component: CameraPage },
+		{ title: 'Camera'		      	, component: CameraPage },
+		{ title: 'Play Audio Asset'		, component: PlayAudioAssetPage },
     ];
 
 	}
