@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Camera</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<button ion-button (click)="takePicture()">Take picture</button>
+	<br>
+	
+	<button ion-button (click)="takeChooseFromLibrary()">From library</button>
+	<br>
+	
+	<button ion-button (click)="takeChooseFromAlbum()">From album</button>
+	<br>
+	
+	<img [src]="viewImageUrl"/>
+	
+</ion-content>
