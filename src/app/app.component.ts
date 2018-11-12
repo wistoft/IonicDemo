@@ -1,8 +1,11 @@
+import firebase from 'firebase';
+
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { LoginPage } from '../pages/login/login';
 import { CameraPage } from '../pages/camera/camera';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 import { UtilPage } from '../pages/util/util';
@@ -13,18 +16,27 @@ import { UtilPage } from '../pages/util/util';
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
-	rootPage: any = CameraPage;
+	rootPage: any = LoginPage;
 
 	pages: Array<{title: string, component: any}>;
 
 	constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
 
-    // used for an example of ngFor and navigation
-    this.pages = [
-		{ title: 'Camera'		      	, component: CameraPage },
-		{ title: 'Play Audio Asset'		, component: PlayAudioAssetPage },
-		{ title: 'Util'					, component: UtilPage },
-    ];
+		//init firebase
+		
+			firebase.initializeApp({
+				apiKey: "AIzaSyASwwTQDpoN1C8YOk_0D7w8XfEmqb87x9U",
+				authDomain: "ionicdemo-2c5fb.firebaseapp.com",
+			});
+				
+		// used for an example of ngFor and navigation
+
+			this.pages = [
+				{ title: 'Login'				, component: LoginPage },
+				{ title: 'Camera'		      	, component: CameraPage },
+				{ title: 'Play Audio Asset'		, component: PlayAudioAssetPage },
+				{ title: 'Util'					, component: UtilPage },
+			];
 
 	}
 

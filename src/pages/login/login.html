@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<button ion-button (click)="create()">Create</button>
+	<br>
+	
+	<button *ngIf="!authorized"
+			ion-button
+			(click)="login()"
+			>Login</button>
+	<br>
+			
+	<button *ngIf="authorized"
+			ion-button
+			(click)="logout()"
+			>Logout</button>
+	<br>
+
+	<iframe *ngIf="authorized" src="https://player.vimeo.com/video/255698341" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				
+	<button *ngIf="authorized"
+			ion-button
+			(click)="openMarket()"
+			>Open Market</button>
+	<br>
+
+</ion-content>

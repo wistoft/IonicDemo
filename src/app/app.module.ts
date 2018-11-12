@@ -7,10 +7,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { File } from '@ionic-native/file';
 import { Camera } from '@ionic-native/camera';
 import { Media } from '@ionic-native/media';
+import { Market } from '@ionic-native/market';
 
 import { MyApp } from './app.component';
 import { UtilService } from '../services/app.util.service';
 
+import { LoginPage } from '../pages/login/login';
 import { CameraPage } from '../pages/camera/camera';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 import { UtilPage } from '../pages/util/util';
@@ -18,6 +20,7 @@ import { UtilPage } from '../pages/util/util';
 @NgModule({
 	declarations: [
 		MyApp,
+		LoginPage,
 		CameraPage,
 		PlayAudioAssetPage,
 		UtilPage,
@@ -29,6 +32,7 @@ import { UtilPage } from '../pages/util/util';
 	bootstrap: [IonicApp],
 	entryComponents: [
 		MyApp,
+		LoginPage,
 		CameraPage,
 		PlayAudioAssetPage,
 		UtilPage,
@@ -40,6 +44,7 @@ import { UtilPage } from '../pages/util/util';
 		File,
 		Camera,
 		Media,
+		Market,
 		UtilService,
 	]
 })
