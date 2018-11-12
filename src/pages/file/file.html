@@ -1,0 +1,36 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Files</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+
+    <select [(ngModel)]="selectedFolder" (ngModelChange)="showFolder()">
+        <option [value]="i" *ngFor="let folder of folders; let i = index">{{folder.name}}</option>
+    </select>
+    <br>
+    <span *ngIf="currentFolder">
+      <span *ngIf="showDetails">
+        <b>Input:</b> {{currentFolder.baseUrl}}<span *ngIf="currentFolder.folder">{{currentFolder.folder}}</span><br>
+        <b>FullPath:</b> {{viewDirPath}}<br>
+        <b>URL:</b> {{viewDirURL}}<br>
+        <b>InternalURL:</b> {{viewDirInternalURL}}<br>
+      </span>
+    </span>
+    <br>
+
+    <button ion-button (click)="showFolder()">Show</button>
+    <button ion-button (click)="showDetails = !showDetails">Details</button>
+    <br>
+    <br>
+    
+    <ion-item *ngFor="let file of viewFiles">{{file}}</ion-item>
+    <br>
+    
+  </ion-content>
+  

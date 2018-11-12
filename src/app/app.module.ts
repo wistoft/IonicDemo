@@ -13,6 +13,7 @@ import { MyApp } from './app.component';
 import { UtilService } from '../services/app.util.service';
 
 import { LoginPage } from '../pages/login/login';
+import { FilePage } from '../pages/file/file';
 import { CameraPage } from '../pages/camera/camera';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 import { UtilPage } from '../pages/util/util';
@@ -21,6 +22,7 @@ import { UtilPage } from '../pages/util/util';
 	declarations: [
 		MyApp,
 		LoginPage,
+		FilePage,
 		CameraPage,
 		PlayAudioAssetPage,
 		UtilPage,
@@ -33,6 +35,7 @@ import { UtilPage } from '../pages/util/util';
 	entryComponents: [
 		MyApp,
 		LoginPage,
+		FilePage,
 		CameraPage,
 		PlayAudioAssetPage,
 		UtilPage,

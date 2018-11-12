@@ -6,6 +6,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
+import { FilePage } from '../pages/file/file';
 import { CameraPage } from '../pages/camera/camera';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 import { UtilPage } from '../pages/util/util';
@@ -33,6 +34,7 @@ export class MyApp {
 
 			this.pages = [
 				{ title: 'Login'				, component: LoginPage },
+				{ title: 'Files'				, component: FilePage },
 				{ title: 'Camera'		      	, component: CameraPage },
 				{ title: 'Play Audio Asset'		, component: PlayAudioAssetPage },
 				{ title: 'Util'					, component: UtilPage },
