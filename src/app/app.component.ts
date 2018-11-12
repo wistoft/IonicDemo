@@ -15,7 +15,7 @@ import { PushNotificationPage } from '../pages/push-notification/push-notificati
 import { UtilPage } from '../pages/util/util';
 
 @Component({
-	templateUrl: 'app.html'
+  templateUrl: 'app.html'
 })
 export class MyApp {
 	@ViewChild(Nav) nav: Nav;
@@ -25,16 +25,29 @@ export class MyApp {
 	pages: Array<{title: string, component: any}>;
 
 	constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
-
-		//init firebase
 		
+		//init firebase
+	
 			firebase.initializeApp({
 				apiKey: "AIzaSyASwwTQDpoN1C8YOk_0D7w8XfEmqb87x9U",
 				authDomain: "ionicdemo-2c5fb.firebaseapp.com",
 			});
+			
+		//on platform ready
+			
+			this.platform.ready().then(() => {
 				
-		// used for an example of ngFor and navigation
+				// Okay, so the platform is ready and our plugins are available.
+				// Here you can do any higher level native things you might need.
+				this.statusBar.styleDefault();
+				this.splashScreen.hide();
+				
+				console.log("ready");
+				
+			});
 
+		// used for an example of ngFor and navigation
+			
 			this.pages = [
 				{ title: 'Login'				, component: LoginPage },
 				{ title: 'Files'				, component: FilePage },
@@ -46,15 +59,6 @@ export class MyApp {
 				{ title: 'Util'					, component: UtilPage },
 			];
 
-	}
-
-	initializeApp() {
-		this.platform.ready().then(() => {
-			// Okay, so the platform is ready and our plugins are available.
-			// Here you can do any higher level native things you might need.
-			this.statusBar.styleDefault();
-			this.splashScreen.hide();
-		});
 	}
 
 	openPage(page) {
