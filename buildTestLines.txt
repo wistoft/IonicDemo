@@ -1,0 +1,5 @@
+       Use Ctrl+C to quit this process
+> cordova run android --debug
+[cordova]  Subproject Path: CordovaLib
+[cordova]  Subproject Path: app
+sdflj

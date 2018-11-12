@@ -1,0 +1,186 @@
+> ionic-app-scripts serve --address 0.0.0.0 --port 8100 --livereload-port 35729 --dev-logger-port 53703 --consolelogs --nobrowser --iscordovaserve --platform android --target cordova
+[app-scripts] [13:04:41]  ionic-app-scripts 3.2.0 
+[app-scripts] [13:04:41]  watch started ... 
+[app-scripts] [13:04:41]  build dev started ... 
+[app-scripts] [13:04:41]  clean started ... 
+[app-scripts] [13:04:41]  clean finished in 15 ms 
+[app-scripts] [13:04:41]  copy started ... 
+[app-scripts] [13:04:41]  deeplinks started ... 
+[app-scripts] [13:04:41]  deeplinks finished in 142 ms 
+[app-scripts] [13:04:41]  transpile started ... 
+[app-scripts] [13:04:46]  transpile finished in 4.92 s 
+[app-scripts] [13:04:46]  preprocess started ... 
+[app-scripts] [13:04:46]  preprocess finished in less than 1 ms 
+[app-scripts] [13:04:46]  webpack started ... 
+[app-scripts] [13:04:50]  copy finished in 8.67 s 
+[app-scripts] [13:04:54]  webpack finished in 7.67 s 
+[app-scripts] [13:04:54]  sass started ... 
+[app-scripts] [13:04:56]  sass finished in 2.09 s 
+[app-scripts] [13:04:56]  postprocess started ... 
+[app-scripts] [13:04:56]  postprocess finished in 10 ms 
+[app-scripts] [13:04:56]  lint started ... 
+[app-scripts] [13:04:56]  build dev finished in 15.06 s 
+[app-scripts] [13:04:56]  watch ready in 15.20 s 
+
+[INFO] Development server running!
+       
+       Local: http://localhost:8100
+       External: http://10.130.16.145:8100
+       
+       Use Ctrl+C to quit this process
+
+> cordova run android --debug
+[cordova]  Android Studio project detected
+[cordova]  ANDROID_HOME=C:\Users\mikael\AppData\Local\Android\Sdk
+[cordova]  JAVA_HOME=C:\Program Files\java\jdk1.8.0_121
+[cordova]  studio
+[cordova]  Subproject Path: CordovaLib
+[cordova]  Subproject Path: app
+[app-scripts] [13:05:00]  lint finished in 4.10 s 
+[cordova]  publishNonDefault is deprecated and has no effect anymore. All variants are now published.
+[cordova]  The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
+[cordova]  	at build_es6kt46jyyxzowep4cnhzgcmd.run(C:\Darhadni\htdocs\ionicDemo\platforms\android\app\build.gradle:144)
+[cordova]  Configuration 'compile' in project ':app' is deprecated. Use 'implementation' instead.
+[cordova]  registerResGeneratingTask is deprecated, use registerGeneratedFolders(FileCollection)
+[cordova]  registerResGeneratingTask is deprecated, use registerGeneratedFolders(FileCollection)
+[cordova]  :CordovaLib:preBuild UP-TO-DATE
+[cordova]  :CordovaLib:preDebugBuild UP-TO-DATE
+[cordova]  :CordovaLib:compileDebugAidl UP-TO-DATE
+[cordova]  :CordovaLib:compileDebugRenderscript UP-TO-DATE
+[cordova]  :CordovaLib:checkDebugManifest UP-TO-DATE
+[cordova]  :CordovaLib:generateDebugBuildConfig UP-TO-DATE
+[cordova]  :CordovaLib:prepareLintJar UP-TO-DATE
+[cordova]  :CordovaLib:generateDebugResValues UP-TO-DATE
+[cordova]  :CordovaLib:generateDebugResources UP-TO-DATE
+[cordova]  :CordovaLib:packageDebugResources UP-TO-DATE
+[cordova]  :CordovaLib:platformAttrExtractor UP-TO-DATE
+[cordova]  :CordovaLib:processDebugManifest UP-TO-DATE
+[cordova]  :CordovaLib:processDebugResources UP-TO-DATE
+[cordova]  :CordovaLib:generateDebugSources UP-TO-DATE
+[cordova]  :CordovaLib:javaPreCompileDebug UP-TO-DATE
+[cordova]  :CordovaLib:compileDebugJavaWithJavac UP-TO-DATE
+[cordova]  :CordovaLib:processDebugJavaRes NO-SOURCE
+[cordova]  :CordovaLib:transformClassesAndResourcesWithPrepareIntermediateJarsForDebug UP-TO-DATE
+[cordova]  :app:preBuild UP-TO-DATE
+[cordova]  :app:preDebugBuild UP-TO-DATE
+[cordova]  :app:compileDebugAidl UP-TO-DATE
+[cordova]  :CordovaLib:packageDebugRenderscript NO-SOURCE
+[cordova]  :app:compileDebugRenderscript UP-TO-DATE
+[cordova]  :app:checkDebugManifest UP-TO-DATE
+[cordova]  :app:generateDebugBuildConfig UP-TO-DATE
+[cordova]  :app:prepareLintJar UP-TO-DATE
+[cordova]  :app:generateDebugResValues UP-TO-DATE
+[cordova]  :app:generateDebugResources UP-TO-DATE
+[cordova]  :app:processDebugGoogleServices
+[cordova]  Parsing json file: C:\Darhadni\htdocs\IonicDemo\platforms\android\app\google-services.json
+[cordova]  :app:mergeDebugResources UP-TO-DATE
+[cordova]  :app:createDebugCompatibleScreenManifests UP-TO-DATE
+[cordova]  :app:processDebugManifest UP-TO-DATE
+[cordova]  :app:splitsDiscoveryTaskDebug UP-TO-DATE
+[cordova]  :app:processDebugResources UP-TO-DATE
+[cordova]  :app:generateDebugSources UP-TO-DATE
+[cordova]  :app:javaPreCompileDebug UP-TO-DATE
+[cordova]  :app:compileDebugJavaWithJavac UP-TO-DATE
+[cordova]  :app:compileDebugNdk NO-SOURCE
+[cordova]  :app:compileDebugSources UP-TO-DATE
+[cordova]  :CordovaLib:mergeDebugShaders UP-TO-DATE
+[cordova]  :CordovaLib:compileDebugShaders UP-TO-DATE
+[cordova]  :CordovaLib:generateDebugAssets UP-TO-DATE
+[cordova]  :CordovaLib:mergeDebugAssets UP-TO-DATE
+[cordova]  :app:mergeDebugShaders UP-TO-DATE
+[cordova]  :app:compileDebugShaders UP-TO-DATE
+[cordova]  :app:generateDebugAssets UP-TO-DATE
+[cordova]  :app:mergeDebugAssets UP-TO-DATE
+[cordova]  :app:transformClassesWithStackFramesFixerForDebug UP-TO-DATE
+[cordova]  :app:transformClassesWithDesugarForDebug UP-TO-DATE
+[cordova]  :app:transformClassesWithDexBuilderForDebug UP-TO-DATE
+[cordova]  :app:transformClassesWithMultidexlistForDebug UP-TO-DATE
+[cordova]  :app:transformDexArchiveWithDexMergerForDebug UP-TO-DATE
+[cordova]  :CordovaLib:compileDebugNdk NO-SOURCE
+[cordova]  :CordovaLib:mergeDebugJniLibFolders UP-TO-DATE
+[cordova]  :CordovaLib:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+[cordova]  :CordovaLib:transformNativeLibsWithIntermediateJniLibsForDebug UP-TO-DATE
+[cordova]  :app:mergeDebugJniLibFolders UP-TO-DATE
+[cordova]  :app:transformNativeLibsWithMergeJniLibsForDebug UP-TO-DATE
+[cordova]  :app:processDebugJavaRes NO-SOURCE
+[cordova]  :app:transformResourcesWithMergeJavaResForDebug UP-TO-DATE
+[cordova]  :app:validateSigningDebug
+[cordova]  :app:packageDebug UP-TO-DATE
+[cordova]  :app:assembleDebug UP-TO-DATE
+[cordova]  :app:cdvBuildDebug UP-TO-DATE
+[cordova]  
+[cordova]  BUILD SUCCESSFUL in 3s
+[cordova]  47 actionable tasks: 2 executed, 45 up-to-date
+[cordova]  Built the following apk(s): 
+[cordova]  	C:\Darhadni\htdocs\ionicDemo\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+[cordova]  ANDROID_HOME=C:\Users\mikael\AppData\Local\Android\Sdk
+[cordova]  JAVA_HOME=C:\Program Files\java\jdk1.8.0_121
+[cordova]  No target specified, deploying to device 'MWS0216A27004903'.
+[cordova]  none
+[cordova]  Skipping build...
+[cordova]  Built the following apk(s): 
+[cordova]  	C:\Darhadni\htdocs\ionicDemo\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+[cordova]  Using apk: C:\Darhadni\htdocs\ionicDemo\platforms\android\app\build\outputs\apk\debug\app-debug.apk
+[cordova]  Package name: dk.scaut.app.beta.ionicDemo
+[cordova]  LAUNCH SUCCESS
+[app-scripts] [13:05:14]  console.warn: It looks like you're using the development build of the Firebase JS SDK. When deploying 
+[app-scripts]             Firebase apps to production, it is advisable to only import the individual SDK components you intend to use. 
+[app-scripts]             For the module builds, these are available in the following manner (replace <PACKAGE> with the name of a 
+[app-scripts]             component - i.e. auth, database, etc): CommonJS Modules: const firebase = require('firebase/app'); 
+[app-scripts]             require('firebase/<PACKAGE>'); ES Modules: import firebase from 'firebase/app'; import 'firebase/<PACKAGE>'; 
+[app-scripts] [13:05:16]  console.log: Angular is running in the development mode. Call enableProdMode() to enable the production 
+[app-scripts]             mode. 
+[app-scripts] [11:29:59]  preprocess finished in 1 ms 
+[app-scripts] [11:31:12]  build started ... 
+[app-scripts] [11:31:12]  deeplinks update started ... 
+[app-scripts] [11:31:12]  deeplinks update finished in 61 ms 
+[app-scripts] [11:31:12]  transpile update started ... 
+[app-scripts] [11:31:12]  copy update started ... 
+[app-scripts] [11:31:12]  copy update started ... 
+[app-scripts] [11:31:12]  copy update started ... 
+[app-scripts] [11:31:13]  copy update started ... 
+[app-scripts] [11:31:13]  copy update finished in 302 ms 
+[app-scripts] [11:31:13]  copy update finished in 452 ms 
+[app-scripts] [11:31:13]  copy update finished in 914 ms 
+[app-scripts] [11:31:13]  build finished in 1.86 s 
+[cordova]  :app:mergeDebugResources
+[cordova]  :app:processDebugResources
+[cordova]  :app:generateDebugSources
+[cordova]  :app:compileDebugJavaWithJavac
+[cordova]  :app:compileDebugSources
+[cordova]  :app:mergeDebugAssets
+[cordova]  :app:transformClassesWithStackFramesFixerForDebug
+[cordova]  :app:transformClassesWithDesugarForDebug
+[cordova]  :app:transformClassesWithDexBuilderForDebug
+[cordova]  :app:transformDexArchiveWithExternalLibsDexMergerForDebug
+[cordova]  :app:transformDexArchiveWithDexMergerForDebug
+[cordova]  :app:transformResourcesWithMergeJavaResForDebug
+[cordova]  :app:packageDebug
+[cordova]  :app:assembleDebug
+[cordova]  :app:cdvBuildDebug
+[app-scripts] [11:52:59]  transpile update finished in 83 ms 
+[app-scripts] [11:52:59]  webpack update started ... 
+[app-scripts] [11:52:59]  webpack update finished in 532 ms 
+[cordova]  :app:transformDexArchiveWithExternalLibsDexMergerForDebug UP-TO-DATE
+[cordova]  Could not find google-services.json while looking in [src/nullnull/debug, src/debug/nullnull, src/nullnull, src/debug, src/nullnullDebug]
+[cordova]  Could not find google-services.json while looking in [src/nullnull/release, src/release/nullnull, src/nullnull, src/release, src/nullnullRelease]
+[cordova]  1. Download desired System Image by running: "C:\Users\mikael\AppData\Local\Android\Sdk\tools\android.bat" sdk
+[cordova]  2. Create an AVD by running: "C:\Users\mikael\AppData\Local\Android\Sdk\tools\android.bat" avd
+[cordova]  HINT: For a faster emulator, use an Intel System Image and install the HAXM device driver
+[cordova]  
+[cordova]      at C:\Darhadni\htdocs\ionicDemo\platforms\android\cordova\lib\emulator.js:290:29
+[cordova]      at _fulfilled (C:\Darhadni\htdocs\ionicDemo\platforms\android\cordova\node_modules\q\q.js:834:54)
+[cordova]      at self.promiseDispatch.done (C:\Darhadni\htdocs\ionicDemo\platforms\android\cordova\node_modules\q\q.js:863:30)
+[cordova]      at Promise.promise.promiseDispatch (C:\Darhadni\htdocs\ionicDemo\platforms\android\cordova\node_modules\q\q.js:796:13)
+[cordova]      at C:\Darhadni\htdocs\ionicDemo\platforms\android\cordova\node_modules\q\q.js:604:44
+[cordova]      at runSingle (C:\Darhadni\htdocs\ionicDemo\platforms\android\cordova\node_modules\q\q.js:137:13)
+[cordova]      at flush (C:\Darhadni\htdocs\ionicDemo\platforms\android\cordova\node_modules\q\q.js:125:13)
+[cordova]      at _combinedTickCallback (internal/process/next_tick.js:131:7)
+[cordova]      at process._tickCallback (internal/process/next_tick.js:180:9)
+[cordova]  (node:660) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+[cordova]  (node:660) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[app-scripts] [10:20:35]  postprocess finished in less than 1 ms
+[cordova]  Starting a Gradle Daemon, 7 busy and 1 stopped Daemons could not be reused, use --status for details
+[app-scripts] [13:36:47]  clean finished in less than 1 ms 
+[app-scripts] [13:37:01]  postprocess finished in less than 1 ms 
+[app-scripts] [13:53:08]  console.log: Ionic Native: deviceready event fired after 1313 ms 
