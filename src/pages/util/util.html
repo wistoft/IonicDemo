@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Util</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+	<button ion-button (click)="listFolders()">List folders</button>
+	<br>
+
+	<button ion-button (click)="listFiles()">List files</button>
+	<br>
+
+	<button ion-button (click)="checkAndCreateFiles()">Check and create file</button>
+	<br>
+
+	<button ion-button (click)="throwError()">Throw Error</button>
+	<br>
+
+	<button ion-button (click)="rejectPromise()">Reject Promise</button>
+	<br>
+
+	<button ion-button (click)="rejectPromiseDistant()">Reject Promise Distant</button>
+	<br>
+
+	<button ion-button (click)="rejectPromiseDistantLocalCode()">Reject Promise Distant Local Code</button>
+	<br>
+
+	
+</ion-content>

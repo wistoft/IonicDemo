@@ -9,15 +9,18 @@ import { Camera } from '@ionic-native/camera';
 import { Media } from '@ionic-native/media';
 
 import { MyApp } from './app.component';
+import { UtilService } from '../services/app.util.service';
 
 import { CameraPage } from '../pages/camera/camera';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
+import { UtilPage } from '../pages/util/util';
 
 @NgModule({
 	declarations: [
 		MyApp,
 		CameraPage,
 		PlayAudioAssetPage,
+		UtilPage,
 	],
 	imports: [
 		BrowserModule,
@@ -28,6 +31,7 @@ import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 		MyApp,
 		CameraPage,
 		PlayAudioAssetPage,
+		UtilPage,
 	],
 	providers: [
 		StatusBar,
@@ -36,6 +40,7 @@ import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 		File,
 		Camera,
 		Media,
+		UtilService,
 	]
 })
 export class AppModule {}
