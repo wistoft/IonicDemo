@@ -11,6 +11,7 @@ import { CameraPage } from '../pages/camera/camera';
 import { ImagePage } from '../pages/image/image';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 import { RecordAudioPage } from '../pages/record-audio/record-audio';
+import { PushNotificationPage } from '../pages/push-notification/push-notification';
 import { UtilPage } from '../pages/util/util';
 
 @Component({
@@ -41,6 +42,7 @@ export class MyApp {
 				{ title: 'Images'				, component: ImagePage },
 				{ title: 'Play Audio Asset'		, component: PlayAudioAssetPage },
 				{ title: 'Record Audio'			, component: RecordAudioPage },
+				{ title: 'Push Notification'	, component: PushNotificationPage },
 				{ title: 'Util'					, component: UtilPage },
 			];
 

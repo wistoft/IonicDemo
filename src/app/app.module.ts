@@ -8,6 +8,7 @@ import { File } from '@ionic-native/file';
 import { Camera } from '@ionic-native/camera';
 import { Media } from '@ionic-native/media';
 import { Market } from '@ionic-native/market';
+import { Push } from '@ionic-native/push';
 
 import { MyApp } from './app.component';
 import { UtilService } from '../services/app.util.service';
@@ -18,6 +19,7 @@ import { CameraPage } from '../pages/camera/camera';
 import { ImagePage } from '../pages/image/image';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 import { RecordAudioPage } from '../pages/record-audio/record-audio';
+import { PushNotificationPage } from '../pages/push-notification/push-notification';
 import { UtilPage } from '../pages/util/util';
 
 @NgModule({
@@ -29,6 +31,7 @@ import { UtilPage } from '../pages/util/util';
 		ImagePage,
 		PlayAudioAssetPage,
 		RecordAudioPage,
+		PushNotificationPage,
 		UtilPage,
 	],
 	imports: [
@@ -44,6 +47,7 @@ import { UtilPage } from '../pages/util/util';
 		ImagePage,
 		PlayAudioAssetPage,
 		RecordAudioPage,
+		PushNotificationPage,
 		UtilPage,
 	],
 	providers: [
@@ -54,6 +58,7 @@ import { UtilPage } from '../pages/util/util';
 		Camera,
 		Media,
 		Market,
+		Push,
 		UtilService,
 	]
 })

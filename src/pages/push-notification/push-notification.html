@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Push Notification</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+	<b>{{permissionMessage}}</b><br>
+	
+	<button ion-button (click)="onSetBadge(0)">Clear badge</button>
+	<br>
+	<br>
+	<br>
+	
+	<button ion-button (click)="onSetBadge(2)">Set badge to 2</button>
+	<br>
+	<br>
+	<br>
+	
+	<button ion-button (click)="onSetBadge(3)">Set badge to 3</button>
+	<br>
+	<br>
+
+	<b>RegId: </b> {{regId}}
+	
+</ion-content>
