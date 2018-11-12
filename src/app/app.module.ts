@@ -15,6 +15,7 @@ import { UtilService } from '../services/app.util.service';
 import { LoginPage } from '../pages/login/login';
 import { FilePage } from '../pages/file/file';
 import { CameraPage } from '../pages/camera/camera';
+import { ImagePage } from '../pages/image/image';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
 import { UtilPage } from '../pages/util/util';
 
@@ -24,6 +25,7 @@ import { UtilPage } from '../pages/util/util';
 		LoginPage,
 		FilePage,
 		CameraPage,
+		ImagePage,
 		PlayAudioAssetPage,
 		UtilPage,
 	],
@@ -37,6 +39,7 @@ import { UtilPage } from '../pages/util/util';
 		LoginPage,
 		FilePage,
 		CameraPage,
+		ImagePage,
 		PlayAudioAssetPage,
 		UtilPage,
 	],

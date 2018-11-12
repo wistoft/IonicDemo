@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Images</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	
+	<select [(ngModel)]="selectedImage" (ngModelChange)="showImage()">
+		<option [value]="i" *ngFor="let image of images; let i = index">{{image.name}}</option>
+	</select>
+	<br>
+	
+	ReadAsDataURL: <ion-checkbox [(ngModel)]="useReadAsDataURL" (ngModelChange)="showImage()"></ion-checkbox>
+	<br>
+	
+	Sanitize: <ion-checkbox [(ngModel)]="sanitizeURL" (ngModelChange)="showImage()"></ion-checkbox>
+	<br>
+	
+	<button ion-button (click)="showImage()">Show</button>
+	<br>
+
+	<b>{{imageExistsMessage}}: </b>
+	<br>
+
+
+	<img *ngIf="!sanitizeURL" [src]="viewImageUrl">
+	<img *ngIf="sanitizeURL" [src]="viewImageUrlSafe">
+	<br> 
+	
+	<b>URL: </b>{{imageUrlShownToUser}}
+	<br>
+	
+	{{devMessage}}
+	
+</ion-content>
+
