@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Permissions Page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  {{readyMessage}}
+	<br>
+	
+	
+	<button ion-button (click)="openSettings()">settings</button>
+	<br>
+	<br>
+	
+	<b>Runtime (android)</b>
+	<br>
+	<br>
+
+	<span *ngFor="let perm of perms">
+		<button ion-button (click)="onRequestRuntimePermission(perm)">{{perm}}</button>
+		{{permsStatus[perm]}}
+		<br>
+	</span>
+	<br>
+	<br>
+
+	<b>Camera</b>
+	<br>
+	<br>
+	
+	<button ion-button (click)="onCheckCameraPermissions()">Check</button>
+	{{cameraPermission}}
+	<br>
+	<br>
+	
+	<button ion-button (click)="requestCameraAuthorization()">Request</button>
+	(Also requests sd-card access.)
+	<br>
+	<br>
+	
+	<button ion-button (click)="requestCameraRuntimePermission()">Runtime Request</button>
+	<br>
+	<br>
+	
+
+	<b>Microphone</b>
+	<br>
+	<br>
+	
+	<button ion-button (click)="onCheckMicrophonePermissions()">Check</button>
+	{{microphonePermission}}
+	<br>
+	<br>
+	
+	<button ion-button (click)="requestMicrophoneAuthorization()">Request</button>
+	<br>
+	<br>
+	
+	
+	<button ion-button (click)="requestMicrophoneRuntimePermission()">Runtime Request</button>
+	<br>
+	<br>
+	
+	
+	
+
+	<b>Push</b>
+	<br>
+
+	Doesn't work on android.
+	<br>
+	
+	<button ion-button (click)="onCheckPushPermissions()">Check</button>
+	{{pushPermission}}
+	<br>
+	<br>
+	
+	<button ion-button (click)="requestPushAuthorization()">Request</button>
+	<br>
+	<br>
+	
+	
+	
+
+	<b>Storage (android only)</b>
+	<br>
+	<br>
+	
+	<button ion-button (click)="onCheckStoragePermissions()">Check</button>
+	{{storagePermission}}
+	<br>
+	<br>
+	
+	<button ion-button (click)="requestStorageAuthorization()">Request</button>
+	<br>
+	<br>
+	
+	
+	<button ion-button (click)="requestStorageRuntimePermission()">Runtime Request</button>
+	<br>
+	<br>
+	
+	
+	
+</ion-content>
