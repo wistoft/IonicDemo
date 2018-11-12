@@ -8,15 +8,11 @@ import { File } from '@ionic-native/file';
 import { Camera } from '@ionic-native/camera';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { CameraPage } from '../pages/camera/camera';
 
 @NgModule({
 	declarations: [
 		MyApp,
-		HomePage,
-		ListPage,
 		CameraPage
 	],
 	imports: [
@@ -26,8 +22,6 @@ import { CameraPage } from '../pages/camera/camera';
 	bootstrap: [IonicApp],
 	entryComponents: [
 		MyApp,
-		HomePage,
-		ListPage,
 		CameraPage
 	],
 	providers: [
