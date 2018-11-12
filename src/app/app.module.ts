@@ -17,6 +17,7 @@ import { FilePage } from '../pages/file/file';
 import { CameraPage } from '../pages/camera/camera';
 import { ImagePage } from '../pages/image/image';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
+import { RecordAudioPage } from '../pages/record-audio/record-audio';
 import { UtilPage } from '../pages/util/util';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { UtilPage } from '../pages/util/util';
 		CameraPage,
 		ImagePage,
 		PlayAudioAssetPage,
+		RecordAudioPage,
 		UtilPage,
 	],
 	imports: [
@@ -41,6 +43,7 @@ import { UtilPage } from '../pages/util/util';
 		CameraPage,
 		ImagePage,
 		PlayAudioAssetPage,
+		RecordAudioPage,
 		UtilPage,
 	],
 	providers: [

@@ -10,6 +10,7 @@ import { FilePage } from '../pages/file/file';
 import { CameraPage } from '../pages/camera/camera';
 import { ImagePage } from '../pages/image/image';
 import { PlayAudioAssetPage } from '../pages/play-audio-asset/play-audio-asset';
+import { RecordAudioPage } from '../pages/record-audio/record-audio';
 import { UtilPage } from '../pages/util/util';
 
 @Component({
@@ -39,6 +40,7 @@ export class MyApp {
 				{ title: 'Camera'		      	, component: CameraPage },
 				{ title: 'Images'				, component: ImagePage },
 				{ title: 'Play Audio Asset'		, component: PlayAudioAssetPage },
+				{ title: 'Record Audio'			, component: RecordAudioPage },
 				{ title: 'Util'					, component: UtilPage },
 			];
 

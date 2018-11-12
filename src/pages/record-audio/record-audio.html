@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Record Audio</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	
+	{{currentStatus}}
+	<br>
+	<br>
+	
+	<button ion-button (click)="recordAudio()">Record</button>
+	<button ion-button (click)="stopRecordAudio()">Stop</button>
+	<br>
+	<br>
+	<br>
+	
+	<button ion-button (click)="playRecordedAudio()">Play</button>
+	<button ion-button (click)="stopPlayAudio()">Stop</button>
+	<br>
+	<br>
+	<br>
+	
+	<button ion-button (click)="outInfo()">Output info</button>
+	<br>
+	<br>
+	<br>
+
+
+	
+</ion-content>
